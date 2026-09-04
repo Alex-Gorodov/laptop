@@ -1,11 +1,14 @@
 {
-  "name": "threejs-journey-exercise",
+  "name": "laptop-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "laptop",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.3",
@@ -15,6 +18,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
+    "gh-pages": "^6.3.0",
     "r3f-perf": "^7.2.3",
     "react": "19.0",
     "react-dom": "19.0",
